@@ -208,6 +208,14 @@
                                     <constraint firstAttribute="bottom" secondItem="F9q-at-o9d" secondAttribute="bottom" id="v8S-Uf-3OD"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWe-mc-C1g">
+                                <rect key="frame" x="0.0" y="130" width="70" height="3"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="buG-Yl-p2u"/>
+                                    <constraint firstAttribute="width" constant="70" id="byA-qA-wJ2"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jpv-Qf-X2x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -221,12 +229,15 @@
                             <constraint firstItem="jpv-Qf-X2x" firstAttribute="trailing" secondItem="iwe-2Q-q5f" secondAttribute="trailing" id="WgM-Ma-kpE"/>
                             <constraint firstItem="jpv-Qf-X2x" firstAttribute="trailing" secondItem="qbF-Xg-kWg" secondAttribute="trailing" id="XiT-zk-aci"/>
                             <constraint firstAttribute="bottom" secondItem="qbF-Xg-kWg" secondAttribute="bottom" id="aQg-l8-zt8"/>
+                            <constraint firstItem="nWe-mc-C1g" firstAttribute="top" secondItem="kmv-h5-APl" secondAttribute="top" constant="130" id="iFq-md-clz"/>
+                            <constraint firstItem="nWe-mc-C1g" firstAttribute="leading" secondItem="jpv-Qf-X2x" secondAttribute="leading" id="jsm-v7-ptx"/>
                             <constraint firstItem="ond-fp-Pf0" firstAttribute="top" secondItem="kmv-h5-APl" secondAttribute="top" id="x3l-7r-qBt"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="3000" height="844"/>
                     <connections>
                         <outlet property="collectionView" destination="F9q-at-o9d" id="CnQ-Sm-gnA"/>
+                        <outlet property="indicatorBar" destination="nWe-mc-C1g" id="D5a-Gg-wbF"/>
                         <outlet property="scrollView" destination="CHb-lp-ode" id="irc-Y5-HeI"/>
                     </connections>
                 </viewController>
