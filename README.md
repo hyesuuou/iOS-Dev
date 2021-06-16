@@ -15,12 +15,12 @@ iOS 왕초보가 공부하는 레포
 
 ### ~ 6/25
 
-|날짜|공부내용|완료여부|
-|:---:|:---------------:|:-------------:|
-||푸시알림||
-||하단탭바 커스텀하기||
-||UIImagePickerController||
-||CustomNavigationBar||
-||PanGesture||
-||XLPagerTabStrip||
-||테이블뷰, 컬렉션뷰||
+|날짜|공부내용|완료여부|폴더 바로가기|
+|:---:|:---------------:|:-------------:|:-:|
+||푸시알림|||
+||하단탭바 커스텀하기|||
+||UIImagePickerController|||
+||CustomNavigationBar|||
+||PanGesture|||
+||XLPagerTabStrip|||
+||테이블뷰, 컬렉션뷰|||
