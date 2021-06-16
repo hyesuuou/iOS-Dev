@@ -10,3 +10,17 @@ iOS 왕초보가 공부하는 레포
 
 - [마켓컬리 클론](https://github.com/MooroKurly/MooroKurly_KimHyeSu)
 - [5/5 무아요 3차 스터디 - codebase로 TableView](https://github.com/hyesuuou/iOS-Dev/tree/main/TableView_CodeBase%202)
+
+<br><br>
+
+### ~ 6/25
+
+|날짜|공부내용|완료여부|
+|:---:|:---------------:|:-------------:|
+||푸시알림||
+||하단탭바 커스텀하기||
+||UIImagePickerController||
+||CustomNavigationBar||
+||PanGesture||
+||XLPagerTabStrip||
+||테이블뷰, 컬렉션뷰||
