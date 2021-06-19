@@ -210,7 +210,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWe-mc-C1g">
                                 <rect key="frame" x="0.0" y="130" width="70" height="3"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="backgroundColor" red="0.43529411764705883" green="0.011764705882352941" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="buG-Yl-p2u"/>
                                     <constraint firstAttribute="width" constant="70" id="byA-qA-wJ2"/>
