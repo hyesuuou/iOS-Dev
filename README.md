@@ -22,7 +22,7 @@ iOS 왕초보가 공부하는 레포
 |6/17|상단 커스텀 탭바(라이브러리x)|o|마켓컬리에있는데 조만간 가져오겠음..|[바로가기](https://www.notion.so/Custom-Tabbar-48f620ba17cb41d3a455180d37c2d6c7)|
 ||푸시알림|||
 ||하단탭바 커스텀하기|||
-||UIImagePickerController|||
+||UIImagePickerController|[폴더가기](https://github.com/hyesuuou/iOS-Dev/tree/main/ImagePickerPrac)||
 ||CustomNavigationBar|||
 ||PanGesture|||
 ||XLPagerTabStrip|||
