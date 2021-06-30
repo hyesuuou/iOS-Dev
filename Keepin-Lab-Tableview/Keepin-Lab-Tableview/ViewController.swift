@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        filteredData = data
+        //filteredData = data
         
         registerXib()
         // Do any additional setup after loading the view.
@@ -39,6 +39,7 @@ class ViewController: UIViewController {
 // MARK: SearchBar Config
 extension ViewController : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
         filteredData = []
         
         if searchText == "" {
@@ -75,7 +76,42 @@ extension ViewController : UITableViewDataSource {
             return 0
         }
     }
+//
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        <#code#>
+//    }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if seletedData.count == 0 {
+            switch section {
+            case 0:
+                return 0
+            default:
+                return 100
+            }
+        }
+        else {
+            return 100.0
+        }
+        
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+            if seletedData.count != 0 {
+                return "선택된 친구"
+            }
+            else {return ""}
+            
+        case 1:
+            return "검색된 친구"
+        default:
+            return ""
+        }
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -104,7 +140,7 @@ extension ViewController : UITableViewDataSource {
         case 0:
             print("먼데..")
             // 여기서 선택하면 해당 내용 filteredData에 추가 후 내용 삭제
-            filteredData.append(seletedData[indexPath.row])
+            filteredData.append(seletedData[indexPath.row])   // 여기 바로 추가하면 안되겠다..
             seletedData.remove(at: indexPath.row)
             
         case 1:

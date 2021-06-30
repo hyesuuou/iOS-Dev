@@ -15,6 +15,8 @@
 		1515C08F268C5F6000B4F620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1515C08D268C5F6000B4F620 /* LaunchScreen.storyboard */; };
 		1515C098268C649900B4F620 /* TestTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515C096268C649900B4F620 /* TestTVC.swift */; };
 		1515C099268C649900B4F620 /* TestTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1515C097268C649900B4F620 /* TestTVC.xib */; };
+		1515C09B268CD21E00B4F620 /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1515C09A268CD21E00B4F620 /* CustomHeaderView.xib */; };
+		1515C09F268CD3E000B4F620 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515C09E268CD3E000B4F620 /* CustomHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		1515C090268C5F6000B4F620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1515C096268C649900B4F620 /* TestTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTVC.swift; sourceTree = "<group>"; };
 		1515C097268C649900B4F620 /* TestTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTVC.xib; sourceTree = "<group>"; };
+		1515C09A268CD21E00B4F620 /* CustomHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
+		1515C09E268CD3E000B4F620 /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				1515C084268C5F5F00B4F620 /* SceneDelegate.swift */,
 				1515C088268C5F5F00B4F620 /* Main.storyboard */,
 				1515C086268C5F5F00B4F620 /* ViewController.swift */,
+				1515C09A268CD21E00B4F620 /* CustomHeaderView.xib */,
+				1515C09E268CD3E000B4F620 /* CustomHeaderView.swift */,
 				1515C096268C649900B4F620 /* TestTVC.swift */,
 				1515C097268C649900B4F620 /* TestTVC.xib */,
 				1515C08B268C5F6000B4F620 /* Assets.xcassets */,
@@ -130,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1515C09B268CD21E00B4F620 /* CustomHeaderView.xib in Resources */,
 				1515C08F268C5F6000B4F620 /* LaunchScreen.storyboard in Resources */,
 				1515C099268C649900B4F620 /* TestTVC.xib in Resources */,
 				1515C08C268C5F6000B4F620 /* Assets.xcassets in Resources */,
@@ -144,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1515C09F268CD3E000B4F620 /* CustomHeaderView.swift in Sources */,
 				1515C087268C5F5F00B4F620 /* ViewController.swift in Sources */,
 				1515C098268C649900B4F620 /* TestTVC.swift in Sources */,
 				1515C083268C5F5F00B4F620 /* AppDelegate.swift in Sources */,

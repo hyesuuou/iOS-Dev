@@ -22,15 +22,6 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rp9-yZ-9JA">
-                        <rect key="frame" x="295" y="31" width="20" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="tintColor" red="0.43529411759999997" green="0.01176470588" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <state key="normal" image="checkmark.square" catalog="system"/>
-                        <connections>
-                            <action selector="selectedButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wN4-Fd-mrq"/>
-                        </connections>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNl-vL-lJK">
                         <rect key="frame" x="245" y="32" width="42" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -54,7 +45,4 @@
             <point key="canvasLocation" x="153.62318840579712" y="154.6875"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="checkmark.square" catalog="system" width="128" height="114"/>
-    </resources>
 </document>
