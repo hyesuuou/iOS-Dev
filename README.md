@@ -8,6 +8,12 @@ iOS 왕초보가 공부하는 레포
 - SOPT 28기 클라이언트-디자인/서버 합동세미나
   - [당근마켓 리디자인 iOS 레포 링크](https://github.com/Be-Daangn/Be-Daangn-iOS) -> hyesoo 브랜치에서 작업
 
+- SOPT 28기 솝커톤
+  - [고도의전략](https://github.com/28th-SOPKATON/SOPKATON-iOS)
+
+- SOPT 28기 앱잼
+  - [Keepin](https://github.com/TeamKeepin/Keepin-iOS)
+
 - [마켓컬리 클론](https://github.com/MooroKurly/MooroKurly_KimHyeSu)
 - [5/5 무아요 3차 스터디 - codebase로 TableView](https://github.com/hyesuuou/iOS-Dev/tree/main/TableView_CodeBase%202)
 
