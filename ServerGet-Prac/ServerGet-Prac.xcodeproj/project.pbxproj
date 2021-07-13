@@ -22,6 +22,11 @@
 		152439C7269C3E14009E5E8E /* GetRandomSquaredVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152439C6269C3E14009E5E8E /* GetRandomSquaredVC.swift */; };
 		152439CA269C3F6A009E5E8E /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152439C9269C3F6A009E5E8E /* DataResponse.swift */; };
 		152439CF269C43EF009E5E8E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152439CE269C43EF009E5E8E /* DataManager.swift */; };
+		152439DA269D33C1009E5E8E /* PostSignin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152439D9269D33C1009E5E8E /* PostSignin.storyboard */; };
+		152439DC269D33CF009E5E8E /* PostSigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152439DB269D33CF009E5E8E /* PostSigninVC.swift */; };
+		152439DE269D3441009E5E8E /* PostSigninRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152439DD269D3441009E5E8E /* PostSigninRequest.swift */; };
+		152439E0269D344F009E5E8E /* PostSigninResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152439DF269D344F009E5E8E /* PostSigninResponse.swift */; };
+		152439E2269D345E009E5E8E /* PostSigninDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152439E1269D345E009E5E8E /* PostSigninDataManager.swift */; };
 		AF872F9558C99F4206CA936D /* Pods_ServerGet_Prac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EBBB4FEF9C756D15F04CAD /* Pods_ServerGet_Prac.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +48,11 @@
 		152439C6269C3E14009E5E8E /* GetRandomSquaredVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomSquaredVC.swift; sourceTree = "<group>"; };
 		152439C9269C3F6A009E5E8E /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
 		152439CE269C43EF009E5E8E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		152439D9269D33C1009E5E8E /* PostSignin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostSignin.storyboard; sourceTree = "<group>"; };
+		152439DB269D33CF009E5E8E /* PostSigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSigninVC.swift; sourceTree = "<group>"; };
+		152439DD269D3441009E5E8E /* PostSigninRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSigninRequest.swift; sourceTree = "<group>"; };
+		152439DF269D344F009E5E8E /* PostSigninResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSigninResponse.swift; sourceTree = "<group>"; };
+		152439E1269D345E009E5E8E /* PostSigninDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSigninDataManager.swift; sourceTree = "<group>"; };
 		399A1FB3C421E16CB5A58945 /* Pods-ServerGet-Prac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServerGet-Prac.debug.xcconfig"; path = "Target Support Files/Pods-ServerGet-Prac/Pods-ServerGet-Prac.debug.xcconfig"; sourceTree = "<group>"; };
 		918A4246DA1C193C129BD502 /* Pods-ServerGet-Prac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServerGet-Prac.release.xcconfig"; path = "Target Support Files/Pods-ServerGet-Prac/Pods-ServerGet-Prac.release.xcconfig"; sourceTree = "<group>"; };
 		C7EBBB4FEF9C756D15F04CAD /* Pods_ServerGet_Prac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ServerGet_Prac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +94,7 @@
 				152439B6269C1B0C009E5E8E /* APIConstant.swift */,
 				152439C0269C24F0009E5E8E /* NetworkResult.swift */,
 				152439BC269C1D36009E5E8E /* Token.swift */,
+				152439D6269D3389009E5E8E /* PostSignIn */,
 				152439C3269C3DCE009E5E8E /* GetRandomSquared */,
 				152439C2269C3D98009E5E8E /* GetRandom */,
 				152439A2269C1AD4009E5E8E /* AppDelegate.swift */,
@@ -131,6 +142,34 @@
 				152439CE269C43EF009E5E8E /* DataManager.swift */,
 			);
 			path = DataManager;
+			sourceTree = "<group>";
+		};
+		152439D6269D3389009E5E8E /* PostSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				152439D8269D33B5009E5E8E /* DataModel */,
+				152439D7269D33AF009E5E8E /* DataManager */,
+				152439D9269D33C1009E5E8E /* PostSignin.storyboard */,
+				152439DB269D33CF009E5E8E /* PostSigninVC.swift */,
+			);
+			path = PostSignIn;
+			sourceTree = "<group>";
+		};
+		152439D7269D33AF009E5E8E /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				152439E1269D345E009E5E8E /* PostSigninDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		152439D8269D33B5009E5E8E /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				152439DF269D344F009E5E8E /* PostSigninResponse.swift */,
+				152439DD269D3441009E5E8E /* PostSigninRequest.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		A4A275F18A569DAC44ECDDE4 /* Pods */ = {
@@ -209,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152439DA269D33C1009E5E8E /* PostSignin.storyboard in Resources */,
 				152439C5269C3DF2009E5E8E /* GetRandomSquared.storyboard in Resources */,
 				152439AF269C1AD5009E5E8E /* LaunchScreen.storyboard in Resources */,
 				152439AC269C1AD5009E5E8E /* Assets.xcassets in Resources */,
@@ -269,12 +309,16 @@
 				152439BD269C1D36009E5E8E /* Token.swift in Sources */,
 				152439B7269C1B0C009E5E8E /* APIConstant.swift in Sources */,
 				152439C1269C24F0009E5E8E /* NetworkResult.swift in Sources */,
+				152439E2269D345E009E5E8E /* PostSigninDataManager.swift in Sources */,
+				152439DC269D33CF009E5E8E /* PostSigninVC.swift in Sources */,
 				152439A7269C1AD4009E5E8E /* ViewController.swift in Sources */,
 				152439BB269C1CEB009E5E8E /* KeepinService.swift in Sources */,
 				152439A3269C1AD4009E5E8E /* AppDelegate.swift in Sources */,
 				152439A5269C1AD4009E5E8E /* SceneDelegate.swift in Sources */,
 				152439CF269C43EF009E5E8E /* DataManager.swift in Sources */,
+				152439DE269D3441009E5E8E /* PostSigninRequest.swift in Sources */,
 				152439CA269C3F6A009E5E8E /* DataResponse.swift in Sources */,
+				152439E0269D344F009E5E8E /* PostSigninResponse.swift in Sources */,
 				152439C7269C3E14009E5E8E /* GetRandomSquaredVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
