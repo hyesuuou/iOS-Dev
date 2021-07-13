@@ -22,7 +22,7 @@ class PostSigninDataManager {
                 switch response.result {
                 case .success(let response):
                     print("로그인 통신 성공~!")
-                    print(response.message)
+                    print(response.message) 
                 case .failure(let error):
                     print("로그인 통신 실패 ㅠ_ㅠ")
                     print(error.errorDescription)
