@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     let data : [String] = ["김혜수", "최이준", "이채연", "박윤정", "박윤경", "이은영", "김영민", "손연주", "김보민"]
+    let sectionlist : [String] = ["선택", "검색"]
     var filteredData : [String] = [] // 검색된 결과
     var seletedData : [String] = [] // 선택된 데이터
     
@@ -31,6 +32,8 @@ class ViewController: UIViewController {
     func registerXib(){
         let nib = UINib(nibName: TestTVC.identifier, bundle: nil)
         tableview.register(nib, forCellReuseIdentifier: TestTVC.identifier)
+        let sectionnib = UINib(nibName: CustomHeaderSectionView.identifier, bundle: nil)
+        tableview.register(sectionnib, forCellReuseIdentifier: CustomHeaderSectionView.identifier)
     }
 
 
@@ -76,10 +79,12 @@ extension ViewController : UITableViewDataSource {
             return 0
         }
     }
-//
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        <#code#>
-//    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let sectionHeader = tableview.dequeueReusableHeaderFooterView(withIdentifier: CustomHeaderSectionView.identifier) as? CustomHeaderSectionView else { return UIView() }
+        sectionHeader.setData(title: sectionlist[section])
+        return sectionHeader
+    }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if seletedData.count == 0 {
@@ -98,20 +103,20 @@ extension ViewController : UITableViewDataSource {
     
     
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 0:
-            if seletedData.count != 0 {
-                return "선택된 친구"
-            }
-            else {return ""}
-            
-        case 1:
-            return "검색된 친구"
-        default:
-            return ""
-        }
-    }
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        switch section {
+//        case 0:
+//            if seletedData.count != 0 {
+//                return "선택된 친구"
+//            }
+//            else {return ""}
+//
+//        case 1:
+//            return "검색된 친구"
+//        default:
+//            return ""
+//        }
+//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         

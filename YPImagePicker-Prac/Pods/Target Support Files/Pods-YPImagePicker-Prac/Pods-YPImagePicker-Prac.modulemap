@@ -1,0 +1,6 @@
+framework module Pods_YPImagePicker_Prac {
+  umbrella header "Pods-YPImagePicker-Prac-umbrella.h"
+
+  export *
+  module * { export * }
+}
