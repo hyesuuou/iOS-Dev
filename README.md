@@ -14,7 +14,7 @@ iOS 왕초보가 공부하는 레포
 |합동세미나|2021. 05. 15 ~ 2021. 06. 08|클라이언트-서버,디자인 당근마켓리디자인|[당근마켓 iOS 레포 링크](https://github.com/Be-Daangn/Be-Daangn-iOS)|
 |28기 솝커톤|2021. 05. 23 ~ 2021. 05. 24|고도의전략 iOS 파트 개발|[고도의전략](https://github.com/28th-SOPKATON/SOPKATON-iOS)|
 |28기 앱잼|2021. 06. 26 ~ 2021. 07. 17|Keepin iOS 파트 개발|[Keepin](https://github.com/TeamKeepin/Keepin-iOS)|
-
+|스터디|2021. 07. 24 ~|애플 날씨앱 클론코딩 'Moother'|[날씨클론](https://github.com/HowIsTheMootherToday/Moother_KimHyeSu)|
 
 - [5/5 무아요 3차 스터디 - codebase로 TableView](https://github.com/hyesuuou/iOS-Dev/tree/main/TableView_CodeBase%202)
 
