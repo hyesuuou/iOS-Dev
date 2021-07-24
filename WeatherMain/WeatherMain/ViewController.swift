@@ -13,19 +13,38 @@ class ViewController: UIViewController {
     var color : [UIColor] = [UIColor.red, UIColor.green, UIColor.purple]
     
     @IBOutlet weak var scrollview: UIScrollView!
+    @IBOutlet weak var pagecontroller: UIPageControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
-    
+        scrollview.delegate = self
     }
     
     func setUI(){
         for index in 0..<cityList.count {
-            let subview = UIView()
-            subview.frame = UIScreen.main.bounds
-            subview.backgroundColor = color[index]
-            subview.frame.origin.x = UIScreen.main.bounds.width * CGFloat(index)
-            scrollview.addSubview(subview)
+            
+            let containview = UIView()
+            
+            let sb = UIStoryboard(name: "Base", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: BaseVC.identifier)
+            
+            //self.addChild(vc)
+            containview.frame = UIScreen.main.bounds
+            containview.frame.origin.x = UIScreen.main.bounds.width * CGFloat(index)
+            scrollview.addSubview(containview)
+            BaseVC.colors = color[index]
+            //vc.view.backgroundColor = color[index]
+            containview.addSubview(vc.view)
+            
+            
+            
+//            let subview = UIView()
+//            print("아놔")
+//            subview.frame = UIScreen.main.bounds
+//            //subview.backgroundColor = color[index]
+//            subview.frame.origin.x = UIScreen.main.bounds.width * CGFloat(index)
+//            scrollview.addSubview(subview)
         }
         
         scrollview.contentSize = CGSize(
@@ -33,8 +52,23 @@ class ViewController: UIViewController {
         )
         
         scrollview.alwaysBounceVertical = false
-        
+        pagecontroller.numberOfPages = cityList.count
     }
 
+    // pagecontroller의 IBAction -> 상태가 바뀌면 호출됨
+    @IBAction func pageChanged(_ sender: Any) {
+        UIView.animate(withDuration: 0.3){
+            self.scrollview.contentOffset.x = UIScreen.main.bounds.width * CGFloat(self.pagecontroller.currentPage)
+        }
+    }
 }
+
+extension ViewController : UIScrollViewDelegate {
+    // scrollview가 움직일 때 호출
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        pagecontroller.currentPage = Int(floor(scrollView.contentOffset.x / UIScreen.main.bounds.width))
+        
+    }
+}
+
 

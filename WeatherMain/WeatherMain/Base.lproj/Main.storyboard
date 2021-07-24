@@ -19,18 +19,29 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYf-t3-dr0">
                                 <rect key="frame" x="0.0" y="0.0" width="3000" height="896"/>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Vli-Xt-dII">
+                                <rect key="frame" x="20" y="444" width="122" height="28"/>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemOrangeColor"/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="LpO-tN-Ykg"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZYf-t3-dr0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7a2-Cr-ARz"/>
                             <constraint firstItem="ZYf-t3-dr0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BPs-AP-iZS"/>
+                            <constraint firstItem="Vli-Xt-dII" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JjM-t4-zSq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZYf-t3-dr0" secondAttribute="trailing" id="PK2-ic-UWs"/>
                             <constraint firstAttribute="bottom" secondItem="ZYf-t3-dr0" secondAttribute="bottom" id="kTC-lS-VgD"/>
+                            <constraint firstItem="Vli-Xt-dII" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="400" id="yuv-yA-kVU"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="3000" height="896"/>
                     <connections>
+                        <outlet property="pagecontroller" destination="Vli-Xt-dII" id="LLJ-1V-AB1"/>
                         <outlet property="scrollview" destination="ZYf-t3-dr0" id="oSr-VG-7IG"/>
                     </connections>
                 </viewController>
@@ -42,6 +53,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
