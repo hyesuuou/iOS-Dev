@@ -49,12 +49,12 @@ class ViewController: UIViewController {
         let notificationContent = UNMutableNotificationContent()
         var date = Date()
         
-        let exampleDate = DateComponents(year: 2021, month: 7, day: 14, hour: 1, minute: 35)
+        let exampleDate = DateComponents(year: 2021, month: 7, day: 17, hour: 10, minute: 11)
         date = Calendar.current.date(from: exampleDate)!
         
         // content에 들어갈 title과 body
-        notificationContent.title = "35분에 와라"
-        notificationContent.body = "푸시알림 시연하고싶다."
+        notificationContent.title = "이제 Keepin할 선물💝을 준비해 볼까요?"
+        notificationContent.body = "오늘은 데모데이입니다."
         
         // 1. Trigger - 여기서 시간을 전달받아서 그 시간 뒤에 받기로 했음. (여기서 이제 날짜,시간으로 바꿔주면 될거같다.)
         /*
