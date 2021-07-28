@@ -25,6 +25,9 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UIScrollViewDelegate {
+    
+    
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print(scrollview.contentOffset.y) // 위로 올라가면 +
         if (scrollview.contentOffset.y > 0){
