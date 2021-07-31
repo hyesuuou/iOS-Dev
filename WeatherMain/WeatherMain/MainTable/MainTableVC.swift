@@ -73,6 +73,17 @@ extension MainTableVC: UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        switch section {
+        case 1:
+            let view = UIView()
+            view.backgroundColor = .systemPink
+            return view
+        default:
+            return UIView()
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
@@ -96,6 +107,17 @@ extension MainTableVC: UITableViewDataSource {
             return 100
         }
         
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        switch section {
+        case 0:
+            return 0
+        case 1:
+            return 500
+        default:
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
