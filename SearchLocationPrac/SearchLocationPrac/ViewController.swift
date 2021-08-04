@@ -36,6 +36,7 @@ extension ViewController: UISearchBarDelegate {
             searchResults.removeAll()
             tableview.reloadData()
         }
+        searchCompleter.resultTypes = .address
         searchCompleter.queryFragment = searchText
     }
     
@@ -44,6 +45,7 @@ extension ViewController: UISearchBarDelegate {
 extension ViewController: MKLocalSearchCompleterDelegate {
     func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) {
         searchResults = completer.results
+        
         tableview.reloadData()
     }
     

@@ -33,24 +33,14 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLL-t4-A32">
-                                                    <rect key="frame" x="5" y="31" width="404" height="14.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="aWD-jp-6G1" firstAttribute="leading" secondItem="eqL-7a-aOK" secondAttribute="leading" constant="5" id="1Eu-tX-mT0"/>
                                                 <constraint firstAttribute="trailing" secondItem="aWD-jp-6G1" secondAttribute="trailing" constant="5" id="3td-HK-vXH"/>
-                                                <constraint firstItem="YLL-t4-A32" firstAttribute="leading" secondItem="eqL-7a-aOK" secondAttribute="leading" constant="5" id="VDP-rE-zOC"/>
-                                                <constraint firstItem="YLL-t4-A32" firstAttribute="top" secondItem="aWD-jp-6G1" secondAttribute="bottom" constant="5" id="aAm-qL-B6l"/>
-                                                <constraint firstAttribute="trailing" secondItem="YLL-t4-A32" secondAttribute="trailing" constant="5" id="mKx-x6-g5r"/>
                                                 <constraint firstItem="aWD-jp-6G1" firstAttribute="top" secondItem="eqL-7a-aOK" secondAttribute="top" constant="5" id="oyy-mQ-0ft"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="subtitleLabel" destination="YLL-t4-A32" id="xGa-MK-dkn"/>
                                             <outlet property="titleLabel" destination="aWD-jp-6G1" id="kox-xa-qjX"/>
                                         </connections>
                                     </tableViewCell>
