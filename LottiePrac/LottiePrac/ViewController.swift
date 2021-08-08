@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         animationView.center = self.view.center
         animationView.contentMode = .scaleAspectFill
         animationView.play()
+        animationView.loopMode = .loop // 무한재생
         animationView.isHidden = false
         return animationView
     }()
