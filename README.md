@@ -23,13 +23,8 @@ iOS 왕초보가 공부하는 레포
 
 
 
-|날짜|공부내용|완료여부|폴더 바로가기|정리리드미|
+|✏️|공부내용|완료여부|폴더 바로가기|정리리드미|
 |:---:|:---------------:|:-------------:|:-:|:-:|
 |6/17|상단 커스텀 탭바(라이브러리x)|o||[바로가기](https://www.notion.so/Custom-Tabbar-48f620ba17cb41d3a455180d37c2d6c7)|
-||푸시알림|||
-||하단탭바 커스텀하기|||
-||UIImagePickerController||[폴더가기](https://github.com/hyesuuou/iOS-Dev/tree/main/ImagePickerPrac)||
-||CustomNavigationBar|||
-||PanGesture|||
-||XLPagerTabStrip|||
-||테이블뷰, 컬렉션뷰|||
+|[#9](https://github.com/hyesuuou/iOS-Dev/issues/9)|URLSession|o||[🍎](https://github.com/hyesuuou/iOS-Dev/issues/9)|
+
