@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         config.startOnScreen = .library
         config.wordings.libraryTitle = "갤러리"
         config.maxCameraZoomFactor = 2.0
-        config.library.maxNumberOfItems = 2
+        config.library.maxNumberOfItems = 3
         config.gallery.hidesRemoveButton = false
         config.hidesBottomBar = false
         config.hidesStatusBar = false
@@ -54,15 +54,10 @@ class ViewController: UIViewController {
                 case .photo(let photo):
                     print(photo)
                     self.pickedIMG.append(photo.image)
-                    
-                    self.imageView[0].image = self.pickedIMG[i]
-                    
+                    self.imageView[i].image = photo.image
                     
                 case .video(let video):
                     print(video)
-                    
-                default:
-                    print("")
                 }
                 
                 i = i+1

@@ -29,6 +29,10 @@
                                 <rect key="frame" x="25" y="94" width="83" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6P-EY-xDM">
+                                <rect key="frame" x="64" y="502" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -37,6 +41,7 @@
                         <outlet property="addButton" destination="3lK-Jd-dv3" id="CSK-DC-9K7"/>
                         <outletCollection property="imageView" destination="vZB-62-Ha3" collectionClass="NSMutableArray" id="KaT-gv-OVg"/>
                         <outletCollection property="imageView" destination="GmI-cO-W16" collectionClass="NSMutableArray" id="6Xy-u5-OZY"/>
+                        <outletCollection property="imageView" destination="f6P-EY-xDM" collectionClass="NSMutableArray" id="fPb-hL-Mxw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
