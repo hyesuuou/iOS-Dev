@@ -16,6 +16,10 @@
 		15A3B4DB26E27E5700A57ADD /* DelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3B4DA26E27E5700A57ADD /* DelegateVC.swift */; };
 		15A3B4DD26E27F1B00A57ADD /* SampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3B4DC26E27F1B00A57ADD /* SampleProtocol.swift */; };
 		15A3B4DF26E33A9B00A57ADD /* DelegateSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3B4DE26E33A9B00A57ADD /* DelegateSecondVC.swift */; };
+		15A3B4E326E3583500A57ADD /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A3B4E226E3583500A57ADD /* Second.storyboard */; };
+		15A3B4E726E3585600A57ADD /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3B4E626E3585600A57ADD /* SecondVC.swift */; };
+		15A3B4E926E3587B00A57ADD /* MessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3B4E826E3587B00A57ADD /* MessageProtocol.swift */; };
+		15A3B4EB26E359F700A57ADD /* SecondNextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3B4EA26E359F700A57ADD /* SecondNextVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		15A3B4DA26E27E5700A57ADD /* DelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateVC.swift; sourceTree = "<group>"; };
 		15A3B4DC26E27F1B00A57ADD /* SampleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleProtocol.swift; sourceTree = "<group>"; };
 		15A3B4DE26E33A9B00A57ADD /* DelegateSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateSecondVC.swift; sourceTree = "<group>"; };
+		15A3B4E226E3583500A57ADD /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		15A3B4E626E3585600A57ADD /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		15A3B4E826E3587B00A57ADD /* MessageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageProtocol.swift; sourceTree = "<group>"; };
+		15A3B4EA26E359F700A57ADD /* SecondNextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNextVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +70,38 @@
 		15A3B4C326E27B1800A57ADD /* Delegate-Prac */ = {
 			isa = PBXGroup;
 			children = (
+				15A3B4E026E357F300A57ADD /* FirstPrac */,
+				15A3B4E126E3582500A57ADD /* SecondPrac */,
 				15A3B4C426E27B1800A57ADD /* AppDelegate.swift */,
 				15A3B4C626E27B1800A57ADD /* SceneDelegate.swift */,
-				15A3B4C826E27B1800A57ADD /* ViewController.swift */,
-				15A3B4CA26E27B1800A57ADD /* Main.storyboard */,
-				15A3B4DE26E33A9B00A57ADD /* DelegateSecondVC.swift */,
-				15A3B4DC26E27F1B00A57ADD /* SampleProtocol.swift */,
-				15A3B4DA26E27E5700A57ADD /* DelegateVC.swift */,
 				15A3B4CD26E27B1A00A57ADD /* Assets.xcassets */,
 				15A3B4CF26E27B1A00A57ADD /* LaunchScreen.storyboard */,
 				15A3B4D226E27B1A00A57ADD /* Info.plist */,
 			);
 			path = "Delegate-Prac";
+			sourceTree = "<group>";
+		};
+		15A3B4E026E357F300A57ADD /* FirstPrac */ = {
+			isa = PBXGroup;
+			children = (
+				15A3B4CA26E27B1800A57ADD /* Main.storyboard */,
+				15A3B4C826E27B1800A57ADD /* ViewController.swift */,
+				15A3B4DA26E27E5700A57ADD /* DelegateVC.swift */,
+				15A3B4DE26E33A9B00A57ADD /* DelegateSecondVC.swift */,
+				15A3B4DC26E27F1B00A57ADD /* SampleProtocol.swift */,
+			);
+			path = FirstPrac;
+			sourceTree = "<group>";
+		};
+		15A3B4E126E3582500A57ADD /* SecondPrac */ = {
+			isa = PBXGroup;
+			children = (
+				15A3B4E226E3583500A57ADD /* Second.storyboard */,
+				15A3B4E626E3585600A57ADD /* SecondVC.swift */,
+				15A3B4EA26E359F700A57ADD /* SecondNextVC.swift */,
+				15A3B4E826E3587B00A57ADD /* MessageProtocol.swift */,
+			);
+			path = SecondPrac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A3B4E326E3583500A57ADD /* Second.storyboard in Resources */,
 				15A3B4D126E27B1A00A57ADD /* LaunchScreen.storyboard in Resources */,
 				15A3B4CE26E27B1A00A57ADD /* Assets.xcassets in Resources */,
 				15A3B4CC26E27B1800A57ADD /* Main.storyboard in Resources */,
@@ -148,10 +177,13 @@
 			files = (
 				15A3B4C926E27B1800A57ADD /* ViewController.swift in Sources */,
 				15A3B4C526E27B1800A57ADD /* AppDelegate.swift in Sources */,
+				15A3B4E726E3585600A57ADD /* SecondVC.swift in Sources */,
 				15A3B4C726E27B1800A57ADD /* SceneDelegate.swift in Sources */,
 				15A3B4DF26E33A9B00A57ADD /* DelegateSecondVC.swift in Sources */,
 				15A3B4DB26E27E5700A57ADD /* DelegateVC.swift in Sources */,
 				15A3B4DD26E27F1B00A57ADD /* SampleProtocol.swift in Sources */,
+				15A3B4E926E3587B00A57ADD /* MessageProtocol.swift in Sources */,
+				15A3B4EB26E359F700A57ADD /* SecondNextVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
