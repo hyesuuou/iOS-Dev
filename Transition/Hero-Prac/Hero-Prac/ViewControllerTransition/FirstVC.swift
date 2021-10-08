@@ -10,6 +10,8 @@ import Hero
 
 class FirstVC: UIViewController {
 
+    
+    @IBOutlet weak var view1: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
