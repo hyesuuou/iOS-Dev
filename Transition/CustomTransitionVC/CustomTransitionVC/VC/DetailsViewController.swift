@@ -22,4 +22,7 @@ class DetailsViewController: UIViewController {
         titleLabel.text = spot?.title
         contentsLabel.text = spot?.contents
     }
+    @IBAction func dismissButtonClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

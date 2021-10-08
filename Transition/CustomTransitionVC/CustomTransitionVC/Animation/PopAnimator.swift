@@ -12,7 +12,7 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     let duration = 0.8 // how long the transition
     var presenting = true // presenting or dismissing
     var originFrame = CGRect.zero // store the original frame of image the user taps -> 나중에 full screen으로 바꿀 것
-    
+
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return duration
     }
@@ -32,5 +32,6 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         completion: { _ in
             transitionContext.completeTransition(true)
         })
+        
     }
 }
