@@ -16,7 +16,7 @@ iOS 왕초보가 공부하는 레포
 |스터디|APPS Swift 스터디(21.09~)||
 |SOPT 29th|SOPT 29기 iOS파트 OB활동 - 세미나정리&과제(유튜브클론) (21.10~)|[link](https://github.com/29th-WE-SOPT-iOS-Part/KimHyeSu)|
 |스터디|애플 연락처앱 클론코딩 스터디 '처무락' (21.09~)|[link](https://github.com/FutureiOSdeveloper/CheoMooRac_KimHyeSu)|
-|스터디|iOS 개발자로 거듭나려는 스터디 (21.08~)|[link](https://github.com/SwiftFrequency/SwiftFrequency)|
+|스터디|Mbti -SF-와 함께 iOS 개발자로 거듭나려는 스터디 (21.08~)|[link](https://github.com/SwiftFrequency/SwiftFrequency)|
 |스터디|SOPT 29기 iOS파트 29기 중초보 스터디 '쇼미더아요' (21.10~)|[link](https://github.com/SHOW-ME-THE-iOS)|
 |스터디|iOS 기술공유 스터디 (21.09~)||
 |스터디|iOS 기초를 단단히 다지는 스터디 (21.10~)||
