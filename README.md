@@ -33,5 +33,6 @@ iOS 왕초보가 공부하는 레포
 - [라이브러리 사용하지 않고 상단 커스텀 탭바 만들기 (feat. 마켓컬리 홈화면)](https://www.notion.so/Custom-Tabbar-48f620ba17cb41d3a455180d37c2d6c7)
 - [URLSession 공식문서 읽기](https://github.com/hyesuuou/iOS-Dev/issues/9)
 - [Protocol](https://github.com/hyesuuou/iOS-Dev/blob/main/Protocol.md)
+- [iOS App LifeCycle](https://spark-chive-e55.notion.site/APP-Lifecycle-1b60a8f953a64b1ba2b507fa32e91f5e)
 
 
