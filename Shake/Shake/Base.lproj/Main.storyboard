@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vinicius-amnx-amano-DZ0MfTX_9sQ-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="NSG-z2-L4C" customClass="ArtImageView" customModule="Shake" customModuleProvider="target">
+                                <rect key="frame" x="30" y="160" width="354" height="390"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="390" id="8fS-03-kiT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgf-Kz-yVH" customClass="ActionButton" customModule="Shake" customModuleProvider="target">
+                                <rect key="frame" x="30" y="590" width="354" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KDw-cw-sXu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NSG-z2-L4C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="116" id="GhF-VF-lRg"/>
+                            <constraint firstItem="jgf-Kz-yVH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="K9d-pu-QSN"/>
+                            <constraint firstItem="NSG-z2-L4C" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="X0g-se-1sS"/>
+                            <constraint firstItem="jgf-Kz-yVH" firstAttribute="top" secondItem="NSG-z2-L4C" secondAttribute="bottom" constant="40" id="bPL-47-BiA"/>
+                            <constraint firstItem="NSG-z2-L4C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="wMF-dX-Duk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NSG-z2-L4C" secondAttribute="trailing" constant="30" id="x7e-k9-EMq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jgf-Kz-yVH" secondAttribute="trailing" constant="30" id="y3g-Xo-xT8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="NSG-z2-L4C" id="YQZ-a8-1Uw"/>
+                        <outlet property="shakeButton" destination="jgf-Kz-yVH" id="Jct-ff-uld"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="vinicius-amnx-amano-DZ0MfTX_9sQ-unsplash" width="1250" height="1250"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
