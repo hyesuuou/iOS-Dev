@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		153DA8C62721E7C6004EC898 /* CustomAcitivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DA8C52721E7C6004EC898 /* CustomAcitivity.swift */; };
+		153DA8C62721E7C6004EC898 /* CustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DA8C52721E7C6004EC898 /* CustomActivity.swift */; };
 		159B8263271F422200CE1B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159B8262271F422200CE1B2C /* AppDelegate.swift */; };
 		159B8265271F422200CE1B2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159B8264271F422200CE1B2C /* SceneDelegate.swift */; };
 		159B8267271F422200CE1B2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159B8266271F422200CE1B2C /* ViewController.swift */; };
@@ -47,7 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		153DA8C52721E7C6004EC898 /* CustomAcitivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAcitivity.swift; sourceTree = "<group>"; };
+		153DA8C52721E7C6004EC898 /* CustomActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivity.swift; sourceTree = "<group>"; };
 		159B825F271F422200CE1B2C /* ShareSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		159B8262271F422200CE1B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		159B8264271F422200CE1B2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 				159B8262271F422200CE1B2C /* AppDelegate.swift */,
 				159B8264271F422200CE1B2C /* SceneDelegate.swift */,
 				159B8266271F422200CE1B2C /* ViewController.swift */,
-				153DA8C52721E7C6004EC898 /* CustomAcitivity.swift */,
+				153DA8C52721E7C6004EC898 /* CustomActivity.swift */,
 				159B8268271F422200CE1B2C /* Main.storyboard */,
 				159B828F27215DD600CE1B2C /* PracExtensionTVC.swift */,
 				159B828D27215D6C00CE1B2C /* PracExtensionVC.swift */,
@@ -243,7 +243,7 @@
 				159B8263271F422200CE1B2C /* AppDelegate.swift in Sources */,
 				159B8265271F422200CE1B2C /* SceneDelegate.swift in Sources */,
 				159B829027215DD600CE1B2C /* PracExtensionTVC.swift in Sources */,
-				153DA8C62721E7C6004EC898 /* CustomAcitivity.swift in Sources */,
+				153DA8C62721E7C6004EC898 /* CustomActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
