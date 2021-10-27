@@ -35,5 +35,5 @@ iOS 왕초보가 공부하는 레포
 - [URLSession 공식문서 읽기](https://github.com/hyesuuou/iOS-Dev/issues/9)
 - [Protocol](https://github.com/hyesuuou/iOS-Dev/blob/main/Protocol.md)
 - [iOS App LifeCycle](https://spark-chive-e55.notion.site/APP-Lifecycle-1b60a8f953a64b1ba2b507fa32e91f5e)
-
+- [MVC Pattern](https://spark-chive-e55.notion.site/MVC-Pattern-d6a29a84418446629384ea42e9ace7ab)
 
