@@ -21,49 +21,34 @@ class ShareViewController: SLComposeServiceViewController {
     override func didSelectPost() {
         
         let extensionItems = extensionContext?.inputItems as! [NSExtensionItem]
-        print("extensionContext: ", extensionContext)
-        print("extensionItems: ", extensionItems)
-        
+       
         for items in extensionItems {
             if let itemProviders = items.attachments {
                 for item_provider in itemProviders {
                     if item_provider.hasItemConformingToTypeIdentifier(kUTTypeImage as String) {
                         item_provider.loadItem(forTypeIdentifier: kUTTypeImage as String, options: nil) { (data, error) in
-                            print("Image : \(data)")
+                           // print("Image : \(data)")
                         }
                     }
-                    
-                    
+               
                     if item_provider.hasItemConformingToTypeIdentifier(kUTTypeURL as String) {
-                        
                         item_provider.loadItem(forTypeIdentifier: kUTTypeURL as String, options: nil) { (data, error) in
-                        
-                            
+
                             let savedata =  UserDefaults.init(suiteName: "group.kim.ShareSNS")
                             
                             if let url = data as? URL{
-                                
                                 var arrayList : [String] = []
-                                
                                 if let allData = savedata?.object(forKey: "urlData"){
-                                    
                                     if let tempList = allData as? NSArray{
                                         arrayList = tempList as! [String]
                                     }
-                                    
                                 }
-                                
                                 let test = url.absoluteString
-                                
                                 arrayList.append(test)
-                                
                                 print(arrayList)
-                                
                                 savedata?.setValue(arrayList, forKey: "urlData")
                                 //print("프린트", savedata?.value(forKey: "urlData"))
                                 savedata?.synchronize()
-                                
-                                
                             }
                         }
                         
@@ -76,8 +61,8 @@ class ShareViewController: SLComposeServiceViewController {
         self.extensionContext!.completeRequest(returningItems: []) { (success: Bool) -> Void in
             print(success)
         }
-
-
+        
+        
     }
     
     override func configurationItems() -> [Any]! {

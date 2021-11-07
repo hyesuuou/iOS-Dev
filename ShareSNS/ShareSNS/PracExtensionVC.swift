@@ -28,7 +28,8 @@ class PracExtensionVC: UIViewController, CustomActivityDelegate  {
         print("viewDidLoad")
         tableview.delegate = self
         tableview.dataSource = self
-        urlList = savedata?.value(forKey: "urlData") as! [String]
+        //urlList = savedata?.value(forKey: "urlData")
+        urlList = savedata?.value(forKey: "urlData") as? [String] ?? [""]
         print(urlList)
         print("vc", savedata?.value(forKey: "urlData"))
     }
