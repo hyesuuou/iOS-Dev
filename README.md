@@ -38,3 +38,10 @@ iOS 왕초보가 공부하는 레포
 - [MVC Pattern](https://spark-chive-e55.notion.site/MVC-Pattern-d6a29a84418446629384ea42e9ace7ab)
 - [FireBase를 이용한 소셜로그인 - Github Login](https://spark-chive-e55.notion.site/Firebase-Github-Login-73fcab436c0d4be89b0a1a1dfc5f3c46)
 - [UITableView 뜯어보기](https://spark-chive-e55.notion.site/Tableview-0a7337d3b6d14ae7a2ffb57a265f11fc)
+
+<br><br>
+
+### Clean Code (with Swift)
+
+- [1장. 깨끗한 코드](https://spark-chive-e55.notion.site/1-c0f2802ca3c44b779f77ae701c86ff29)
+- [2장. 의미있는 이름](https://spark-chive-e55.notion.site/2-76967f51fd604e1f90041fa864e5dd41)
