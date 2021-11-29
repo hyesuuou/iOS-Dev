@@ -46,6 +46,12 @@ iOS 왕초보가 공부하는 레포
 
 <br><br>
 
+### WWDC
+
+- [WWDC20 - Advances in UICollectionView](https://spark-chive-e55.notion.site/WWDC20-Advances-in-UICollectionView-ab403f6d11aa4c42bfb007b08a00ebfd)
+
+<br>
+
 ### Clean Code (with Swift)
 
 - [1장. 깨끗한 코드](https://spark-chive-e55.notion.site/1-c0f2802ca3c44b779f77ae701c86ff29)
