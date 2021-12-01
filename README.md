@@ -49,6 +49,7 @@ iOS 왕초보가 공부하는 레포
 ### WWDC
 
 - [WWDC20 - Advances in UICollectionView](https://spark-chive-e55.notion.site/WWDC20-Advances-in-UICollectionView-ab403f6d11aa4c42bfb007b08a00ebfd)
+- [WWDC20 - Advances in diffable data sources](https://spark-chive-e55.notion.site/WWDC2020-Advances-in-diffable-data-sources-babc3c503f2d4d5bb3dad323e03676f9)
 
 <br>
 
