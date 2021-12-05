@@ -53,6 +53,12 @@ iOS 왕초보가 공부하는 레포
 
 <br>
 
+### Architecture
+
+- [아키텍쳐란?](https://spark-chive-e55.notion.site/27748b6291114930882bfcd2d309f525)
+
+<br>
+
 ### Clean Code (with Swift)
 
 - [1장. 깨끗한 코드](https://spark-chive-e55.notion.site/1-c0f2802ca3c44b779f77ae701c86ff29)
