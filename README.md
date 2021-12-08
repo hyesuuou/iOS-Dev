@@ -17,10 +17,10 @@ iOS 왕초보가 공부하는 레포
 |SOPT 29th|SOPT 29기 iOS파트 OB활동 - 세미나정리&과제(유튜브클론) (21.10~)|[link](https://github.com/29th-WE-SOPT-iOS-Part/KimHyeSu)|
 |스터디|애플 연락처앱 클론코딩 스터디 '처무락' (21.09~)|[link](https://github.com/FutureiOSdeveloper/CheoMooRac_KimHyeSu)|
 |스터디|Mbti -SF-와 함께 iOS 개발자로 거듭나려는 스터디 (21.08~)|[link](https://github.com/SwiftFrequency/SwiftFrequency)|
-|스터디|SOPT 29기 iOS파트 29기 중초보 스터디 '쇼미더아요' (21.10~)|[link](https://github.com/SHOW-ME-THE-iOS)|
-|스터디|iOS 기술공유 스터디 (21.09~)||
+|스터디|SOPT 29기 iOS파트 29기 중초보 스터디 '쇼미더아요' (21.10~21.11)|[link](https://github.com/SHOW-ME-THE-iOS)|
+|스터디|iOS 기술공유 스터디 '마다가스카' (21.09~21.11)|[link](https://storypanda.notion.site/5da70b99677e44adbc446c0afb201470)|
 |스터디|iOS 기초를 단단히 다지는 스터디 (21.10~)||
-|스터디|WWDC 공부하는 스터디 (21.10~)||
+|스터디|WWDC 공부하는 스터디 (21.10~)|[link](https://mddc.notion.site/MDDC-350ca89b31ad4154b4b54dc2854e634e)|
 |솝커톤|SOPT 29기 해커톤 - '전남친토스트' iOS파트 개발(21.11.20~21)|[link](https://github.com/29th-SOPKATON-8/Client-iOS)|
 
 
@@ -50,6 +50,7 @@ iOS 왕초보가 공부하는 레포
 
 - [WWDC20 - Advances in UICollectionView](https://spark-chive-e55.notion.site/WWDC20-Advances-in-UICollectionView-ab403f6d11aa4c42bfb007b08a00ebfd)
 - [WWDC20 - Advances in diffable data sources](https://spark-chive-e55.notion.site/WWDC2020-Advances-in-diffable-data-sources-babc3c503f2d4d5bb3dad323e03676f9)
+- [WWDC19 - Advances in UI Data Sources](https://spark-chive-e55.notion.site/WWDC19-Advances-in-UI-Data-Sources-c12cc1e45ff14cc98130e50b2eca65f1)
 
 <br>
 
