@@ -11,7 +11,7 @@ iOS 왕초보가 공부하는 레포
 |스터디|마켓컬리 클론코딩 스터디 'Moorokurly' (21.05~21.06)|[link](https://github.com/MooroKurly/MooroKurly_KimHyeSu)|
 |합동세미나|SOPT 28기에서 진행된 클라이언트-서버,디자인 '당근마켓'리디자인 (21.05~21.06)|[link](https://github.com/Be-Daangn/Be-Daangn-iOS)|
 |솝커톤|SOPT 28기 해커톤 - 고도의 전략 iOS파트 개발(21.05.23~24)|[link](https://github.com/28th-SOPKATON/SOPKATON-iOS)|
-|앱잼|SOPT 28기 앱잼 - Keepin iOS파트 개발(21.06~21.07, 이후 릴리즈 준비중)|[link](https://github.com/TeamKeepin/Keepin-iOS)|
+|앱잼|SOPT 28기 앱잼 - Keepin iOS파트 개발(21.06~21.07, 이후 릴리즈)|[link](https://github.com/TeamKeepin/Keepin-iOS)|
 |스터디|애플 날씨앱 클론코딩 스터디 'Moother' (21.07~21.08)|[link](https://github.com/HowIsTheMootherToday/Moother_KimHyeSu)|
 |스터디|APPS Swift 스터디(21.09~)||
 |SOPT 29th|SOPT 29기 iOS파트 OB활동 - 세미나정리&과제(유튜브클론) (21.10~)|[link](https://github.com/29th-WE-SOPT-iOS-Part/KimHyeSu)|
@@ -19,8 +19,9 @@ iOS 왕초보가 공부하는 레포
 |스터디|Mbti -SF-와 함께 iOS 개발자로 거듭나려는 스터디 (21.08~)|[link](https://github.com/SwiftFrequency/SwiftFrequency)|
 |스터디|SOPT 29기 iOS파트 29기 중초보 스터디 '쇼미더아요' (21.10~21.11)|[link](https://github.com/SHOW-ME-THE-iOS)|
 |스터디|iOS 기술공유 스터디 '마다가스카' (21.09~21.11)|[link](https://storypanda.notion.site/5da70b99677e44adbc446c0afb201470)|
-|스터디|iOS 기초를 단단히 다지는 스터디 (21.10~)||
+|스터디|iOS 기초를 단단히 다지는 스터디 '98즈햄짜기' (21.10~)||
 |스터디|WWDC 공부하는 스터디 (21.10~)|[link](https://mddc.notion.site/MDDC-350ca89b31ad4154b4b54dc2854e634e)|
+|합동세미나|SOPT 29기에서 진행된 클라이언트-서버,디자인 '밀리의서재'리디자인 (21.11~21.12)|[link](https://github.com/SOPT-29th-Joint-Seminar-2/LOM-iOS)|
 |솝커톤|SOPT 29기 해커톤 - '전남친토스트' iOS파트 개발(21.11.20~21)|[link](https://github.com/29th-SOPKATON-8/Client-iOS)|
 
 
