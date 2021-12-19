@@ -16,6 +16,7 @@
 		1592127D276F26E7009B37B2 /* GridCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592127C276F26E7009B37B2 /* GridCVC.swift */; };
 		1592127F276F4E87009B37B2 /* KurlyHomePracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592127E276F4E87009B37B2 /* KurlyHomePracticeVC.swift */; };
 		15921281276F4FD9009B37B2 /* BannerCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15921280276F4FD9009B37B2 /* BannerCVC.swift */; };
+		15921283276F613B009B37B2 /* ProductCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15921282276F613B009B37B2 /* ProductCVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1592127C276F26E7009B37B2 /* GridCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCVC.swift; sourceTree = "<group>"; };
 		1592127E276F4E87009B37B2 /* KurlyHomePracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KurlyHomePracticeVC.swift; sourceTree = "<group>"; };
 		15921280276F4FD9009B37B2 /* BannerCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCVC.swift; sourceTree = "<group>"; };
+		15921282276F613B009B37B2 /* ProductCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1592126A276F2230009B37B2 /* SceneDelegate.swift */,
 				1592126C276F2230009B37B2 /* ViewController.swift */,
 				1592126E276F2230009B37B2 /* Main.storyboard */,
+				15921282276F613B009B37B2 /* ProductCVC.swift */,
 				15921280276F4FD9009B37B2 /* BannerCVC.swift */,
 				1592127E276F4E87009B37B2 /* KurlyHomePracticeVC.swift */,
 				1592127C276F26E7009B37B2 /* GridCVC.swift */,
@@ -149,6 +152,7 @@
 			files = (
 				1592126D276F2230009B37B2 /* ViewController.swift in Sources */,
 				15921269276F2230009B37B2 /* AppDelegate.swift in Sources */,
+				15921283276F613B009B37B2 /* ProductCVC.swift in Sources */,
 				15921281276F4FD9009B37B2 /* BannerCVC.swift in Sources */,
 				1592127D276F26E7009B37B2 /* GridCVC.swift in Sources */,
 				1592127F276F4E87009B37B2 /* KurlyHomePracticeVC.swift in Sources */,
