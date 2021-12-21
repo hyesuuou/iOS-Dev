@@ -4,6 +4,9 @@ iOS 왕초보가 공부하는 레포
 
 
 ### iOS 관련 활동 목록
+
+-> 동아리, 프로젝트, 스터디
+
 |분류|내용|관련link|
 |:--:|:--|:--:|
 |SOPT 28th|SOPT 28기 iOS파트 YB활동 - 세미나정리&과제(카톡 클론) (21.04~21.06)|[link](https://github.com/28th-BE-SOPT-iOS-Part/KimHyeSoo)|
