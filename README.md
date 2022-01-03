@@ -4,6 +4,9 @@ iOS 왕초보가 공부하는 레포
 
 
 ### iOS 관련 활동 목록
+
+-> 동아리, 프로젝트, 스터디
+
 |분류|내용|관련link|
 |:--:|:--|:--:|
 |SOPT 28th|SOPT 28기 iOS파트 YB활동 - 세미나정리&과제(카톡 클론) (21.04~21.06)|[link](https://github.com/28th-BE-SOPT-iOS-Part/KimHyeSoo)|
@@ -13,6 +16,7 @@ iOS 왕초보가 공부하는 레포
 |솝커톤|SOPT 28기 해커톤 - 고도의 전략 iOS파트 개발(21.05.23~24)|[link](https://github.com/28th-SOPKATON/SOPKATON-iOS)|
 |앱잼|SOPT 28기 앱잼 - Keepin iOS파트 개발(21.06~21.07, 이후 릴리즈)|[link](https://github.com/TeamKeepin/Keepin-iOS)|
 |스터디|애플 날씨앱 클론코딩 스터디 'Moother' (21.07~21.08)|[link](https://github.com/HowIsTheMootherToday/Moother_KimHyeSu)|
+|GDSC|Google Developer Student Club Sookmyung iOS Core member (21. 08~)||
 |스터디|APPS Swift 스터디(21.09~)||
 |SOPT 29th|SOPT 29기 iOS파트 OB활동 - 세미나정리&과제(유튜브클론) (21.10~)|[link](https://github.com/29th-WE-SOPT-iOS-Part/KimHyeSu)|
 |스터디|애플 연락처앱 클론코딩 스터디 '처무락' (21.09~)|[link](https://github.com/FutureiOSdeveloper/CheoMooRac_KimHyeSu)|
