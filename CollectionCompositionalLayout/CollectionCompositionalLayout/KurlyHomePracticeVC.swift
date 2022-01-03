@@ -37,7 +37,7 @@ class KurlyHomePracticeVC: UIViewController {
                                   Product(image: UIImage(named: "imgProduct2")!, title: "[우리밀] 두부과자")
                                   
     ]
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class KurlyHomePracticeVC: UIViewController {
         collectionView.dataSource = self
     }
     
-
+    
 }
 
 extension KurlyHomePracticeVC {
@@ -83,10 +83,24 @@ extension KurlyHomePracticeVC {
         
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(150/375), heightDimension: .fractionalWidth(266/150))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(150/375), heightDimension: .absolute(266))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .continuous
+        //
+        let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
+            layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                               heightDimension: .estimated(65)),
+            elementKind: "header",
+            alignment: .top)
+        
+        let sectionFooter = NSCollectionLayoutBoundarySupplementaryItem(
+            layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(70)),
+            elementKind: "footer",
+            alignment: .bottom)
+        
+        section.boundarySupplementaryItems = [sectionHeader, sectionFooter]
+        
         return section
     }
     
@@ -98,6 +112,8 @@ extension KurlyHomePracticeVC: UICollectionViewDataSource {
         return 2
     }
     
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0: return bannerList.count
@@ -106,6 +122,13 @@ extension KurlyHomePracticeVC: UICollectionViewDataSource {
         }
         
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+//        guard let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HeaderCVC.identifier, for: indexPath) as? HeaderCVC else { return UICollectionReusableView() }
+//        return view
+//
+//
+//    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.section {
@@ -122,7 +145,7 @@ extension KurlyHomePracticeVC: UICollectionViewDataSource {
         default:
             return UICollectionViewCell()
         }
-       
+        
     }
     
     

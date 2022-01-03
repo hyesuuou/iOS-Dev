@@ -84,7 +84,7 @@
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4OU-Lo-Ktg">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="50" height="50"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
@@ -130,6 +130,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.64705882349999999" green="0.64705882349999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="l9O-C4-r2o" secondAttribute="trailing" id="4oD-65-Q7C"/>
                                                 <constraint firstItem="MGI-cd-6pP" firstAttribute="top" secondItem="efU-bg-J8g" secondAttribute="top" id="5pI-1u-xfF"/>
@@ -146,6 +147,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderCVC" id="BMe-Pq-OGu" customClass="HeaderCVC" customModule="CollectionCompositionalLayout" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="283" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ml6-Gb-5fV"/>
