@@ -3,8 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +12,7 @@
                 <tabBarController storyboardIdentifier="MainTabbarController" automaticallyAdjustsScrollViewInsets="NO" id="FZA-Kv-Ija" customClass="MainTabbarController" customModule="CardnaPrac" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="XsK-kf-kqX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -21,31 +20,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="1bg-LH-fa6" kind="relationship" relationship="viewControllers" id="lEh-47-iJU"/>
-                        <segue destination="JG7-Jd-Ecv" kind="relationship" relationship="viewControllers" id="x4F-xr-3TL"/>
+                        <segue destination="AUq-4Z-k4z" kind="relationship" relationship="viewControllers" id="2E8-SY-eIK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Wz-5V-pzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="k1O-aE-UOD">
-            <objects>
-                <viewController id="JG7-Jd-Ecv" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Z32-6m-kb7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Qri-nN-JeS"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="YU9-uL-TrX">
-                        <inset key="imageInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
-                    </tabBarItem>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FSG-kg-Ge3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="838" y="228"/>
         </scene>
         <!--MyCardHome-->
         <scene sceneID="NSH-cX-FUT">
@@ -57,10 +37,15 @@
             </objects>
             <point key="canvasLocation" x="-153" y="535"/>
         </scene>
+        <!--CardPack-->
+        <scene sceneID="TF8-rE-eq6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CardPack" id="AUq-4Z-k4z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="I9P-sK-rGd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7oP-at-Nll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="610"/>
+        </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

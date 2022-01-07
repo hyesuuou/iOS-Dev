@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1595337C2787384C00194F3B /* HomeSelecCardViewController +.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1595337B2787384C00194F3B /* HomeSelecCardViewController +.swift */; };
+		15953384278827E000194F3B /* BadgeCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15953382278827E000194F3B /* BadgeCollectionReusableView.swift */; };
+		15BEE3092788B0310090D3CE /* CardPack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BEE3082788B0310090D3CE /* CardPack.storyboard */; };
+		15BEE30B2788B0410090D3CE /* CardPackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEE30A2788B0410090D3CE /* CardPackViewController.swift */; };
+		15BEE30D2788B0FA0090D3CE /* CardPackAddModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEE30C2788B0FA0090D3CE /* CardPackAddModalViewController.swift */; };
 		15F8C7C827869C700076BFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8C7C727869C700076BFBC /* AppDelegate.swift */; };
 		15F8C7CA27869C700076BFBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8C7C927869C700076BFBC /* SceneDelegate.swift */; };
 		15F8C7CF27869C700076BFBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F8C7CD27869C700076BFBC /* Main.storyboard */; };
@@ -19,9 +24,16 @@
 		15F8C7EA278726AB0076BFBC /* MyCardHomeViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8C7E9278726AB0076BFBC /* MyCardHomeViewController+.swift */; };
 		15F8C7ED27872AE90076BFBC /* MyCardHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8C7EC27872AE90076BFBC /* MyCardHomeCollectionViewCell.swift */; };
 		15F8C7F027872E990076BFBC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8C7EF27872E990076BFBC /* Card.swift */; };
+		15F8C7F4278732CC0076BFBC /* HomeSelectCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F8C7F3278732CC0076BFBC /* HomeSelectCard.storyboard */; };
+		15F8C7F6278732E00076BFBC /* HomeSelectCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8C7F5278732E00076BFBC /* HomeSelectCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1595337B2787384C00194F3B /* HomeSelecCardViewController +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeSelecCardViewController +.swift"; sourceTree = "<group>"; };
+		15953382278827E000194F3B /* BadgeCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCollectionReusableView.swift; sourceTree = "<group>"; };
+		15BEE3082788B0310090D3CE /* CardPack.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardPack.storyboard; sourceTree = "<group>"; };
+		15BEE30A2788B0410090D3CE /* CardPackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPackViewController.swift; sourceTree = "<group>"; };
+		15BEE30C2788B0FA0090D3CE /* CardPackAddModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPackAddModalViewController.swift; sourceTree = "<group>"; };
 		15F8C7C427869C700076BFBC /* CardnaPrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardnaPrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F8C7C727869C700076BFBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15F8C7C927869C700076BFBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +48,8 @@
 		15F8C7E9278726AB0076BFBC /* MyCardHomeViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyCardHomeViewController+.swift"; sourceTree = "<group>"; };
 		15F8C7EC27872AE90076BFBC /* MyCardHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardHomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		15F8C7EF27872E990076BFBC /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		15F8C7F3278732CC0076BFBC /* HomeSelectCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeSelectCard.storyboard; sourceTree = "<group>"; };
+		15F8C7F5278732E00076BFBC /* HomeSelectCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSelectCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +63,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1595337A2787383000194F3B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1595337B2787384C00194F3B /* HomeSelecCardViewController +.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1595337D2788245500194F3B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				15953382278827E000194F3B /* BadgeCollectionReusableView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		15BEE3072788B01B0090D3CE /* CardPack */ = {
+			isa = PBXGroup;
+			children = (
+				15BEE3082788B0310090D3CE /* CardPack.storyboard */,
+				15BEE30A2788B0410090D3CE /* CardPackViewController.swift */,
+				15BEE30C2788B0FA0090D3CE /* CardPackAddModalViewController.swift */,
+			);
+			path = CardPack;
+			sourceTree = "<group>";
+		};
 		15F8C7BB27869C700076BFBC = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +132,8 @@
 			children = (
 				15F8C7CD27869C700076BFBC /* Main.storyboard */,
 				15F8C7DD27869D0D0076BFBC /* MainTabbarController.swift */,
-				15F8C7E327869E2E0076BFBC /* MyCardHome */,
+				15F8C7F1278732A00076BFBC /* Home */,
+				15BEE3072788B01B0090D3CE /* CardPack */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -147,6 +188,26 @@
 				15F8C7EF27872E990076BFBC /* Card.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		15F8C7F1278732A00076BFBC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				15F8C7E327869E2E0076BFBC /* MyCardHome */,
+				15F8C7F2278732AF0076BFBC /* HomeSelectCard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		15F8C7F2278732AF0076BFBC /* HomeSelectCard */ = {
+			isa = PBXGroup;
+			children = (
+				1595337D2788245500194F3B /* Components */,
+				1595337A2787383000194F3B /* Extensions */,
+				15F8C7F3278732CC0076BFBC /* HomeSelectCard.storyboard */,
+				15F8C7F5278732E00076BFBC /* HomeSelectCardViewController.swift */,
+			);
+			path = HomeSelectCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +271,8 @@
 				15F8C7D427869C710076BFBC /* LaunchScreen.storyboard in Resources */,
 				15F8C7E527869E460076BFBC /* MyCardHome.storyboard in Resources */,
 				15F8C7D127869C710076BFBC /* Assets.xcassets in Resources */,
+				15BEE3092788B0310090D3CE /* CardPack.storyboard in Resources */,
+				15F8C7F4278732CC0076BFBC /* HomeSelectCard.storyboard in Resources */,
 				15F8C7CF27869C700076BFBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,10 +285,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				15F8C7E727869E5A0076BFBC /* MyCardHomeViewController.swift in Sources */,
+				1595337C2787384C00194F3B /* HomeSelecCardViewController +.swift in Sources */,
 				15F8C7C827869C700076BFBC /* AppDelegate.swift in Sources */,
+				15BEE30D2788B0FA0090D3CE /* CardPackAddModalViewController.swift in Sources */,
+				15BEE30B2788B0410090D3CE /* CardPackViewController.swift in Sources */,
 				15F8C7ED27872AE90076BFBC /* MyCardHomeCollectionViewCell.swift in Sources */,
 				15F8C7E227869D750076BFBC /* UIView +.swift in Sources */,
+				15953384278827E000194F3B /* BadgeCollectionReusableView.swift in Sources */,
 				15F8C7EA278726AB0076BFBC /* MyCardHomeViewController+.swift in Sources */,
+				15F8C7F6278732E00076BFBC /* HomeSelectCardViewController.swift in Sources */,
 				15F8C7CA27869C700076BFBC /* SceneDelegate.swift in Sources */,
 				15F8C7DE27869D0D0076BFBC /* MainTabbarController.swift in Sources */,
 				15F8C7F027872E990076BFBC /* Card.swift in Sources */,

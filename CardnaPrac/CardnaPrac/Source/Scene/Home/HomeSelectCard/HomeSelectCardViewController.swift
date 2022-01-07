@@ -1,5 +1,5 @@
 //
-//  MyCardHomeViewController.swift
+//  HomeSelectCardViewController.swift
 //  CardnaPrac
 //
 //  Created by 김혜수 on 2022/01/06.
@@ -7,19 +7,16 @@
 
 import UIKit
 
-enum Section {
-    case main
-}
-
-class MyCardHomeViewController: UIViewController {
+class HomeSelectCardViewController: UIViewController {
     
     // MARK: - Property
     var dataSource: UICollectionViewDiffableDataSource<Section, Card>!
-    var cardList: [Card] = [Card(title: "카드1"), Card(title: "카드2"), Card(title: "카드3")]
-    
+    var selectedCardList: [Card] = [] /// 선택된 카드
+    var cardList: [Card] = [Card(title: "카드1"), Card(title: "카드2"), Card(title: "카드3")] /// 전체 카드 리스트
+
     // MARK: - IBOutlet
     
-    @IBOutlet weak var homeTitleLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - VC LifeCycle
@@ -33,7 +30,7 @@ class MyCardHomeViewController: UIViewController {
     // MARK: - Function
     
     func setData() {
-        homeTitleLabel.text = "지우님은\n갤럭시유저!"
+        titleLabel.text = "나를 가장 잘 표현하는 카드를\n대표카드로 지정해보세요!"
     }
     
     func setCollectionView() {
@@ -45,14 +42,27 @@ class MyCardHomeViewController: UIViewController {
         })
         collectionView.backgroundColor = .clear
         collectionViewDataApply()
+        
     }
     
     func collectionViewDataApply() {
+        
+        let supplementaryRegistration = UICollectionView.SupplementaryRegistration
+        <BadgeCollectionReusableView>(elementKind: BadgeCollectionReusableView.identifier) {
+            (badgeView, string, indexPath) in
+        }
+        
+        dataSource.supplementaryViewProvider = {
+            return self.collectionView.dequeueConfiguredReusableSupplementary(using: supplementaryRegistration, for: $2)
+        }
+        
+        
         var snapshot = NSDiffableDataSourceSnapshot<Section,Card>()
         snapshot.appendSections([.main])
         snapshot.appendItems(cardList, toSection: .main)
         dataSource.apply(snapshot, animatingDifferences: true, completion: nil)
     }
+    
+    
 
-   
 }

@@ -63,6 +63,15 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecN-kz-0s8">
+                                <rect key="frame" x="345" y="172.5" width="49" height="31"/>
+                                <color key="tintColor" red="0.64705882349999999" green="0.64705882349999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Edit"/>
+                                <connections>
+                                    <action selector="editButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kq1-al-4kB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,7 +79,9 @@
                             <constraint firstItem="2Of-0j-WrW" firstAttribute="top" secondItem="fdX-XC-xsN" secondAttribute="bottom" constant="74" id="GqU-uR-F9a"/>
                             <constraint firstItem="2Of-0j-WrW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="McX-yc-amu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2Of-0j-WrW" secondAttribute="trailing" id="N51-Ev-jxT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ecN-kz-0s8" secondAttribute="trailing" constant="20" id="W6x-CN-lpH"/>
                             <constraint firstItem="fdX-XC-xsN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="28" id="h7y-oJ-Pdn"/>
+                            <constraint firstItem="2Of-0j-WrW" firstAttribute="top" secondItem="ecN-kz-0s8" secondAttribute="bottom" constant="20" id="pSL-eH-eI6"/>
                             <constraint firstItem="fdX-XC-xsN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="pqj-gC-OQL"/>
                         </constraints>
                     </view>
