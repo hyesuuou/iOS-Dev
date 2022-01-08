@@ -37,6 +37,7 @@ class HomeSelectCardViewController: UIViewController {
         collectionView.setCollectionViewLayout(createLayout(), animated: true)
         dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, itemIdentifier -> UICollectionViewCell in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyCardHomeCollectionViewCell.identifier, for: indexPath) as? MyCardHomeCollectionViewCell else { return UICollectionViewCell() }
+            cell.layer.zPosition = -100
             cell.setData(title: itemIdentifier.title)
             return cell
         })
@@ -52,8 +53,13 @@ class HomeSelectCardViewController: UIViewController {
             (badgeView, string, indexPath) in
         }
         
+       // collectionView.register(BadgeCollectionReusableView.self, forSupplementaryViewOfKind: BadgeCollectionReusableView.identifier, withReuseIdentifier: BadgeCollectionReusableView.identifier)
+
+        
+        
         dataSource.supplementaryViewProvider = {
-            return self.collectionView.dequeueConfiguredReusableSupplementary(using: supplementaryRegistration, for: $2)
+            //return self.collectionView.dequeueReusableSupplementaryView(ofKind: BadgeCollectionReusableView.identifier, withReuseIdentifier: BadgeCollectionReusableView.identifier, for: $2)
+           return self.collectionView.dequeueConfiguredReusableSupplementary(using: supplementaryRegistration, for: $2)
         }
         
         

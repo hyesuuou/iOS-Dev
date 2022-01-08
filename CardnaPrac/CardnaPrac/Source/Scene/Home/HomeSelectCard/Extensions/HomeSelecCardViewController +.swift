@@ -15,9 +15,10 @@ extension HomeSelectCardViewController {
     
     func sectionLayout() -> NSCollectionLayoutSection {
         let badgeAnchor = NSCollectionLayoutAnchor(edges: [.top, .trailing],
-                                                   fractionalOffset: CGPoint(x: 0.3, y: -0.3))
-        let badgeSize = NSCollectionLayoutSize(widthDimension: .absolute(30),
-                                               heightDimension: .absolute(30))
+                                                   fractionalOffset: CGPoint(x: 0.3, y: -0.3)
+        )
+        let badgeSize = NSCollectionLayoutSize(widthDimension: .absolute(25),
+                                               heightDimension: .absolute(25))
         let badge = NSCollectionLayoutSupplementaryItem(layoutSize: badgeSize,
                                                         elementKind: BadgeCollectionReusableView.identifier,
                                                         containerAnchor: badgeAnchor)
@@ -27,7 +28,7 @@ extension HomeSelectCardViewController {
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 12)
         let section = NSCollectionLayoutSection(group: group)
-        section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
+        section.orthogonalScrollingBehavior = .continuous
         section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 4, bottom: 0, trailing: 10)
         
         

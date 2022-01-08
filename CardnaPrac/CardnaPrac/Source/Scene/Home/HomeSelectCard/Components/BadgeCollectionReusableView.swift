@@ -10,16 +10,15 @@ import UIKit
 class BadgeCollectionReusableView: UICollectionReusableView {
     
     static let identifier = "BadgeCollectionReusableView"
-   // let label = UILabel()
     let lineView = UIView()
-    
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//    }
+
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configure()
+        DispatchQueue.main.async {
+            self.configure()
+        }
+        
     }
 
     override var frame: CGRect {
@@ -40,34 +39,22 @@ class BadgeCollectionReusableView: UICollectionReusableView {
 
 extension BadgeCollectionReusableView {
     func configure() {
-        backgroundColor = .white
+        
+        self.backgroundColor = .white
         lineView.backgroundColor = .red
-        addSubview(lineView)
+        self.addSubview(lineView)
         lineView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            lineView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            lineView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            lineView.heightAnchor.constraint(equalToConstant: 20)
+            lineView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            lineView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            lineView.widthAnchor.constraint(equalToConstant: 15),
+            lineView.heightAnchor.constraint(equalToConstant: 2)
+
         ])
-        lineView.layer.cornerRadius = 5
+        lineView.layer.cornerRadius = 2
         configureBorder()
     }
     
-//    func configure() {
-//        label.translatesAutoresizingMaskIntoConstraints = false
-//        label.adjustsFontForContentSizeCategory = true
-//        addSubview(label)
-//        NSLayoutConstraint.activate([
-//            label.centerXAnchor.constraint(equalTo: centerXAnchor),
-//            label.centerYAnchor.constraint(equalTo: centerYAnchor)
-//            ])
-//        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-//        label.textAlignment = .center
-//        label.textColor = .red
-//        backgroundColor = .white
-//        configureBorder()
-//    }
-//
     func configureBorder() {
         let radius = bounds.width / 2.0
         layer.cornerRadius = radius

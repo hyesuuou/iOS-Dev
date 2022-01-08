@@ -42,10 +42,6 @@ class CardPackAddModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
-        
-        
-        // 1
         let dimmedTap = UITapGestureRecognizer(target: self, action: #selector(dimmedViewTapped(_:)))
         dimmedView.addGestureRecognizer(dimmedTap)
         dimmedView.isUserInteractionEnabled = true
@@ -107,17 +103,11 @@ class CardPackAddModalViewController: UIViewController {
         view.backgroundColor = .white
         
         // 좌측 상단과 좌측 하단의 cornerRadius를 10으로 설정한다.
-        view.layer.cornerRadius = 10
+        view.layer.cornerRadius = 30
         view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         view.clipsToBounds = true
         return view
     }()
-    
-    // 2
-    
-    // 3
-    
-    // 4
     
     
 }
