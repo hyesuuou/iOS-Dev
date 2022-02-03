@@ -15,12 +15,21 @@ let MEMBER_LIST_URL = "https://my.api.mockaroo.com/members_with_avatar.json?key=
 class ViewController: UIViewController {
     @IBOutlet var timerLabel: UILabel!
     @IBOutlet var editView: UITextView!
-
+    
+    //var disposable: [Disposable] = []
+    var disposaBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in
             self?.timerLabel.text = "\(Date().timeIntervalSince1970)"
         }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        /// 다운받다가 중간에 화면을 나갔을 때, 다운을 중단시킬 수 있음
+        //disposable.forEach { $0.dispose() }
     }
 
     private func setVisibleWithAnimation(_ v: UIView?, _ s: Bool) {
@@ -40,7 +49,7 @@ class ViewController: UIViewController {
     // 5. Disposed
     
     
-    func downloadJson(_ url: String) -> Observable<String?> {
+    func downloadJson(_ url: String) -> Observable<String> {
         /// 1. 비동기로 생기는 데이터를 Observable로 감싸서 리턴하는 방법
         //return Observable.from(["Hello", "World"])
         
@@ -104,16 +113,22 @@ class ViewController: UIViewController {
         /// 2. Observable로 오는 데이터를 받아서 처리하는 방법
         ///
         
-        _ = downloadJson(MEMBER_LIST_URL)
-            .map { json in json?.count ?? 0 }
-            .filter({ cnt in cnt > 0 })
-            .map { "\($0)" }
+        
+        let jsonObservable = downloadJson(MEMBER_LIST_URL)
+        let helloObservable = Observable.just("Hello World")
+        
+        _ = Observable.zip(jsonObservable, helloObservable) { $1 + "\n" + $0 }
             .observeOn(MainScheduler.instance)
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
             .subscribe(onNext: { json in
                 self.editView.text = json
                 self.setVisibleWithAnimation(self.activityIndicator, false)
             })
+            .disposed(by: disposaBag)
+        
+        //disposable.insert(d)
+       // disposable.append(d)
+        
         
 //        downloadJson(MEMBER_LIST_URL)
 //            .subscribe(onNext: { json in
@@ -151,9 +166,9 @@ class ViewController: UIViewController {
 //                break
 //            }
 //        }
-          _ = downloadJson(MEMBER_LIST_URL)
-            .subscribe(onNext: { print($0) },
-                       onCompleted: { print("completed") })
+//          _ = downloadJson(MEMBER_LIST_URL)
+//            .subscribe(onNext: { print($0) },
+//                       onCompleted: { print("completed") })
         
     }
 }
