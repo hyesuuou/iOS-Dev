@@ -81,6 +81,10 @@ extension KeepinViewController: UICollectionViewDelegate, UICollectionViewDataSo
         if indexPath.item == images.count {
             showPicker()
         }
+        else if indexPath.item < images.count {
+            images.remove(at: indexPath.item)
+            collectionView.reloadData()
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
