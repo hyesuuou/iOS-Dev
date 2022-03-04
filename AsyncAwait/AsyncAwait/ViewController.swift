@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         //            }
         //        }
         
-        async {
+        Task {
             let result = await fetchUsers()
             switch result {
             case .success(let users):
