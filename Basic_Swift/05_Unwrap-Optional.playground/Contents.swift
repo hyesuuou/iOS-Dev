@@ -43,3 +43,20 @@ func unwrap(_ parameter: Int?) {
     guard let unWrappedParam = parameter else { return }
     print("unwrappedParam: \(unWrappedParam)")
 }
+
+func checkOptionalValue(value optionalValue: Any?) {
+    switch optionalValue {
+    case .none:
+        print("이 값은 nil입니다.")
+    case .some(let value):
+        print("이 값은 \(value)입니다.")
+    }
+}
+
+var myName: String? = "kimseawater"
+var name: String = "hyesu"
+name = myName!
+
+myName = nil
+name = myName!
+
